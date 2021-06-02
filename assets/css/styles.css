@@ -32,11 +32,26 @@ html, body{
 .lato-medium{
     font-weight: 400;
 }
+.animate{
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
 
 /*navigation*/
 .navbar-brand img{
     width: 100%;
     max-width: 150px;
+}
+
+.nav-link{
+    font-size:16;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    background:var(--cyan)!important;
+    font-weight: 500;
 }
 
 .c-white{
@@ -115,4 +130,40 @@ h2{
 
 .card{
     max-width: 200px;
+}
+.card:hover{
+    transform:scale(1.1);
+}
+
+
+/*footer*/
+footer img{
+    width: 100%;
+max-width: 120px;
+}
+footer ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    
+}
+footer ul li{
+    display: inline-block;
+}
+
+footer ul li a:hover{
+    opacity: .5;
+}
+footer ul li i{
+    font-size: 30px;
+    padding:5px;
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.navbar-collapse{
+    background:var(--cyan);
+    padding:40px;
+}
 }
