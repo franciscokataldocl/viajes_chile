@@ -97,5 +97,22 @@ html, body{
 	transform: translate3d(0, 0, 0);
 }
 
+.section-paragraph .icon-bg i {
+    font-size:20px;
+}
+
+.divider{
+    width:100%;
+    height: 1px;
+    background:var(--cyan);
+    margin:0 auto;
+}
+
+h2{
+    font-size: 26px;
+}
 
 
+.card{
+    max-width: 200px;
+}
